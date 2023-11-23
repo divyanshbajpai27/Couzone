@@ -81,7 +81,7 @@
             color: white;
         }
 
-        .subm {
+        #subm {
             background-color: rgb(0, 162, 255);
             border: none;
             width: 19vw;
@@ -90,6 +90,25 @@
             border-radius: 10px;
             color: white;
             font-size: 1.8vh;
+        }
+
+        #alrt{
+            font-family: 'Poppins', sans-serif;
+            background: rgba(0, 255, 0, 0.7);
+            font-weight: 400;
+            font-size: 3vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6vh;
+            position: relative;
+            top: 10vh;
+            width: fit-content;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            color: white;
+            border-radius: 1vh;
+            display: none;
         }
 
         @media screen and (max-width: 992px) and (min-width: 430px) {
@@ -107,7 +126,7 @@
                 font-size: 2.2vh;
             }
 
-            .subm {
+            #subm {
                 width: 50vw;
                 height: 5vh;
                 font-size: 2.2vh;
@@ -129,11 +148,12 @@
                 font-size: 2.2vh;
             }
 
-            .subm {
+            #subm {
                 width: 70vw;
                 height: 5vh;
                 font-size: 2.2vh;
             }
+
         }
     </style>
 </head>
@@ -149,10 +169,19 @@
                 <h1>Redeem</h1>
                 <input type="text" name="Username" id="userid" placeholder="Username" class="tin">
                 <input type="password" name="password" id="passid" placeholder="OTP" class="tin">
-                <input type="button" value="Submit" class="subm">
+                <button onclick="toggleDisplay()" id="subm">Submit</button>
+                <div id="alrt">
+                    Coupon Code: TRENDS500
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        function toggleDisplay() {
+            var myDiv = document.getElementById('alrt');
+            myDiv.style.display = (myDiv.style.display === 'none' || myDiv.style.display === '') ? 'flex' : 'none';
+        }
+    </script>
 </body>
 
 </html>
