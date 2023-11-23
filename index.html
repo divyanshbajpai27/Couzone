@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Couzone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: rgb(22, 22, 22);
+        }
+
+        nav {
+            background: rgb(11, 11, 11);
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav img {
+            width: 7vw;
+        }
+
+        .restbody {
+            width: 100%;
+            height: 92vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 30vw;
+            height: 80vh;
+            background: rgb(33, 33, 33);
+            border-radius: 20px;
+        }
+
+        .container img {
+            width: 150px;
+            transform: rotate(320deg);
+            position: relative;
+            right: 2vw;
+        }
+
+        .content {
+            margin-top: 6vh;
+            margin-bottom: 8vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        .tin {
+            background-color: rgb(44, 44, 44);
+            border: none;
+            width: 18vw;
+            height: 1vh;
+            margin-top: 3vh;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 1.8vh;
+            color: white;
+        }
+
+        .subm {
+            background-color: rgb(0, 162, 255);
+            border: none;
+            width: 19vw;
+            height: 5vh;
+            margin-top: 3vh;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.8vh;
+        }
+
+        @media screen and (max-width: 992px) and (min-width: 430px) {
+            nav img {
+                width: 17vw;
+            }
+
+            .container {
+                width: 70vw;
+            }
+
+            .tin {
+                width: 47vw;
+                height: 1vh;
+                font-size: 2.2vh;
+            }
+
+            .subm {
+                width: 50vw;
+                height: 5vh;
+                font-size: 2.2vh;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            nav img {
+                width: 30vw;
+            }
+
+            .container {
+                width: 90vw;
+            }
+
+            .tin {
+                width: 65vw;
+                height: 1vh;
+                font-size: 2.2vh;
+            }
+
+            .subm {
+                width: 70vw;
+                height: 5vh;
+                font-size: 2.2vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="Couzone.svg" alt="couzone">
+    </nav>
+    <div class="restbody">
+        <div class="container">
+            <img src="Coupons.png" alt="coupons">
+            <div class="content">
+                <h1>Redeem</h1>
+                <input type="text" name="Username" id="userid" placeholder="Username" class="tin">
+                <input type="password" name="password" id="passid" placeholder="OTP" class="tin">
+                <input type="button" value="Submit" class="subm">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
