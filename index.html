@@ -96,7 +96,7 @@
             font-family: 'Poppins', sans-serif;
             background: rgba(0, 255, 0, 0.7);
             font-weight: 400;
-            font-size: 3vh;
+            font-size: 2.2vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -154,6 +154,25 @@
                 font-size: 2.2vh;
             }
 
+            #alrt{
+            font-family: 'Poppins', sans-serif;
+            background: rgba(0, 255, 0, 0.7);
+            font-weight: 400;
+            font-size: 2vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6vh;
+            position: relative;
+            top: 10vh;
+            width: fit-content;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            color: white;
+            border-radius: 1vh;
+            display: none;
+        }
+
         }
     </style>
 </head>
@@ -167,11 +186,11 @@
             <img src="Coupons.png" alt="coupons">
             <div class="content">
                 <h1>Redeem</h1>
-                <input type="text" name="Username" id="userid" placeholder="Username" class="tin">
+                <input type="text" name="Username" id="userid" placeholder="Coupon No." class="tin">
                 <input type="password" name="password" id="passid" placeholder="OTP" class="tin">
                 <button onclick="toggleDisplay()" id="subm">Submit</button>
                 <div id="alrt">
-                    Coupon Code: TRENDS500
+                    Coupon Code: &nbsp; <b>TRENDS500</b>
                 </div>
             </div>
         </div>
